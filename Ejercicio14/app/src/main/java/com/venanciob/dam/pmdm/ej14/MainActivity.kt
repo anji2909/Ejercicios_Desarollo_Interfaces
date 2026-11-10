@@ -30,8 +30,13 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Ej14Theme {
-                PantallaEntrenamiento()
+                // EJ1
                 //TarjaPresentacion()
+                // EJ2
+                //PantallaEntrenamiento()
+                //EJ3
+                Ejercicio14()
+
             }
         }
     }
