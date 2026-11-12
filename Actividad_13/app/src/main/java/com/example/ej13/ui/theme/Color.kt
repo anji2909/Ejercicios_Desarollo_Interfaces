@@ -2,10 +2,15 @@ package com.example.ej13.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val VerdePrincipal = Color(0xFF168C72)
-val VerdeClaro = Color(0xFFB9F1E1)
-val AzulSecundario = Color(0xFF3F6F9F)
-val FondoClaro = Color(0xFFF7FAF9)
+// Colores principales de la marca Anji
+val AnjiBrown = Color(0xFF754423)
+val AnjiPink = Color(0xFFFF99C7)
+val AnjiMint = Color(0xFFB1EFE3)
 
-val VerdeOscuro = Color(0xFF70D1C2)
-val FondoOscuro = Color(0xFF101816)
+// Escala de grises de la marca Anji
+val AnjiGrayDark = Color(0xFF3C3C3B)
+val AnjiGrayMedium = Color(0xFFA8A8A7)
+val AnjiGrayLight = Color(0xFFE3E3E3)
+
+// Colores adicionales necesarios para buen contraste
+val White = Color(0xFFFFFFFF)

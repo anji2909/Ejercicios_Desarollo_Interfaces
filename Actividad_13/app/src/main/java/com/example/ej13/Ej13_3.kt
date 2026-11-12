@@ -1,6 +1,7 @@
 package com.example.ej13
 
 import android.content.res.Configuration
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -8,7 +9,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.ej13.ui.theme.Ej13Theme
+import com.example.ej13.ui.theme.AnjiTheme
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -30,7 +32,8 @@ fun PantallaEjercicio3() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(paddingValues)
-                .padding(16.dp),
+                .padding(16.dp)
+                .background(MaterialTheme.colorScheme.primaryContainer),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             // Tarjeta principal con MaterialTheme.shapes.medium
@@ -81,14 +84,11 @@ fun PantallaEjercicio3() {
     }
 }
 
-@Preview(showBackground = true, name = "Tema claro")
+@Preview(name = "Claro", uiMode = Configuration.UI_MODE_NIGHT_NO, showBackground = true)
+@Preview(name = "Oscuro", uiMode = Configuration.UI_MODE_NIGHT_YES, showBackground = true)
 @Composable
-fun PreviewEj3Claro() {
-    Ej13Theme(darkTheme = false) { PantallaEjercicio3() }
-}
-
-@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES, name = "Tema oscuro")
-@Composable
-fun PreviewEj3Oscuro() {
-    Ej13Theme(darkTheme = true) { PantallaEjercicio3() }
+fun MiComponentePreview() {
+    AnjiTheme() {
+        PantallaEjercicio3()
+    }
 }

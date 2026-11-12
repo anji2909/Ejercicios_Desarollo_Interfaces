@@ -10,7 +10,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.ej13.ui.theme.Ej13Theme
+import com.example.ej13.ui.theme.AnjiTheme
+
 
 @Composable
 fun PantallaEjercicio1() {
@@ -51,23 +52,12 @@ fun PantallaEjercicio1() {
     }
 }
 
-@Preview(
-    showBackground = true,
-    name = "Tema claro"
-)
+@Preview(name = "Claro", uiMode = Configuration.UI_MODE_NIGHT_NO, showBackground = true)
+@Preview(name = "Oscuro", uiMode = Configuration.UI_MODE_NIGHT_YES, showBackground = true)
 @Composable
-fun PreviewClaro() {
-    Ej13Theme(darkTheme = false) {
+fun MiComponentePreview() {
+    AnjiTheme() {
         PantallaEjercicio1()
     }
-}@Preview(
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-    name = "Tema oscuro"
-)
-@Composable
-fun PreviewOscuro() {
-    Ej13Theme(darkTheme = true) {
-        PantallaEjercicio1()
-    }
+
 }

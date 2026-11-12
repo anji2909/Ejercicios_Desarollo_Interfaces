@@ -33,9 +33,9 @@ class MainActivity : ComponentActivity() {
                 // EJ1
                 //TarjaPresentacion()
                 // EJ2
-                //PantallaEntrenamiento()
+                PantallaEntrenamiento()
                 //EJ3
-                Ejercicio14()
+                //Ejercicio14()
 
             }
         }
