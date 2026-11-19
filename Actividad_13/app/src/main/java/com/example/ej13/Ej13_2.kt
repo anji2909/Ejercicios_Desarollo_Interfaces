@@ -13,7 +13,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.Scaffold
-import com.example.ej13.ui.theme.Ej13Theme
+import com.example.ej13.ui.theme.AnjiTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -84,11 +84,11 @@ fun PantallaEjercicio2() {
 @Preview(showBackground = true, name = "Tema claro")
 @Composable
 fun PreviewEj2Claro() {
-    Ej13Theme(darkTheme = false) { PantallaEjercicio2() }
+    AnjiTheme(darkTheme = false) { PantallaEjercicio2() }
 }
 
 @Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES, name = "Tema oscuro")
 @Composable
 fun PreviewEj2Oscuro() {
-    Ej13Theme(darkTheme = true) { PantallaEjercicio2() }
+    AnjiTheme(darkTheme = true) { PantallaEjercicio2() }
 }

@@ -1,0 +1,48 @@
+# Archivos pesados del examen (> 100 MB, bloqueados por GitHub)
+Examen_Angelo_Baeza.zip
+Examen_Angelo_Baeza/EXAMEN_INTERFACE_ANGELO_BAEZA.mp4
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.rar
+*.7z
+
+# Dependencias y compilaciones habituales (interfaces / web / desarrollo)
+node_modules/
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+coverage/
+*.log
+
+# Entornos virtuales y cachés de otros lenguajes (por si acaso)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+bin/
+obj/
+
+# Sistema operativo y editores (Windows / VS Code / IntelliJ)
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
